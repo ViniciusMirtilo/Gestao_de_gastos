@@ -16,6 +16,7 @@ Este repositório contém o código-fonte de um projeto para controle e análise
 ```
 📂 projeto_gastos
 │—— app.py                 # Arquivo principal da aplicação
+│—— requirements.txt       # Dependências do projeto
 │—— README.md              # Documentação do projeto
 │
 │📂 data                # Arquivos de dados CSV
