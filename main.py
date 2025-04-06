@@ -31,14 +31,6 @@ st.dataframe(df)
 
 col1, col2, col3 = st.columns(3) # espaço para 3 colunas
 
-op = st.selectbox(
-        'Escolhe uma data',
-        df['Data'].unique()            
-    )
-        
-st.write("### Gastos totais por data") # Exibe os gastos totais por data
-gastos_por_data = df[df['Data'] == op]['Valor'].sum()
-st.write(f"Total gastos R$ {gastos_por_data:.2f}")
 
 with col1:
     
