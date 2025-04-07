@@ -2,8 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-#configuaracao da pagina
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Gasto por mês!", page_icon="💵", layout = "wide")
 
 base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')  #voce pode usar o encoding='latin-1' para evitar o erro de codificacao
 df = pd.DataFrame(base)

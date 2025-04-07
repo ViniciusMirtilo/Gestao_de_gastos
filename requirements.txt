@@ -1,3 +1,6 @@
 streamlit
 pandas
 numpy
+streamlit_theme
+plotly.express
+st_pages

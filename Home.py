@@ -1,8 +1,19 @@
 import streamlit as st
 import time
 import numpy as np
+# from st_pages import Page, Section, show_pages, add_page_title, hide_pages
 
 st.set_page_config(page_title="Meu Streamlit!", page_icon="📈")
+
+# show_pages(
+#     [
+#         Page("home.py", "Home"),
+#         Page("pages/1_Geral.py", "Geral"),
+#         Page("pages/2_Gasto_por_categoria.py", "Gasto por categoria"),
+#         Page("pages/3_Gasto_por_mes.py", "Gasto por mês"),
+#         Page("pages/Insights.py", "Insights"),
+#     ]
+# )
 
 st.markdown("## 📈 Meu primeiro aplicativo Streamlit! 📉")
 st.markdown("# Sobre o aplicativo:")
