@@ -3,11 +3,6 @@ import streamlit as st
 import plotly.express as px
 import locale
 
-# Visão Geral	
-# Total de gastos, -
-# gráficos de pizza -
-# barras, KPIs principais.-
-
 
 base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')  #voce pode usar o encoding='latin-1' para evitar o erro de codificacao
 df = pd.DataFrame(base)
