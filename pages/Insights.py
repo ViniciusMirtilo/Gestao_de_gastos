@@ -15,7 +15,7 @@ st.markdown(f"<h3 style='text-align: center;'>Gastos totais: R$  {base['Categori
 
 # Extrair o nome do mês com maior gasto
 mes_mais_gasto = base.groupby(base['Data'].dt.month)['Valor'].sum().idxmax()
-mes_nome = pd.to_datetime(f"2023-{mes_mais_gasto}-01", format='%Y-%m-%d').strftime('%B')
+mes_nome = pd.to_datetime(f"2023-{mes_mais_gasto}-01", format='%Y-%m-%d').strftime('%B').capitalize()
 st.markdown(f"<h3 style='text-align: center;'>Mês com mais gastos: {mes_nome}</h3>", unsafe_allow_html=True)
 
 # Gasto médio mensal
