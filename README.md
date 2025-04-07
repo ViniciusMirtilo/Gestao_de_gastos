@@ -65,5 +65,5 @@ streamlit run app.py
 
 Caso tenha dúvidas ou sugestões, sinta-se à vontade para abrir uma *issue* no repositório.
 
-**Repositório no GitHub**: [projeto_gastos](https://github.com/SeuUsuario/projeto_gastos)
+**Repositório no GitHub**: [Projeto de Controle de Gastos pessoais](https://github.com/ViniciusMirtilo/Gestao_de_gastos.git)
 
