@@ -46,7 +46,7 @@ Este repositório contém o código-fonte de um projeto para controle e análise
 1. Faça o download ou clone este repositório:
 
 ```sh
-git clone https://github.com/SeuUsuario/projeto_gastos.git
+git clone https://github.com/ViniciusMirtilo/Gestao_de_gastos.git
 ```
 
 2. Instale as dependências:
