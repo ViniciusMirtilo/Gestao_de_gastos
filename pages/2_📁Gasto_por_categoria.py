@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Gastos por Categorias", page_icon="📁", layout = "wide")
 
-base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')  #voce pode usar o encoding='latin-1' para evitar o erro de codificacao
+base = pd.read_csv("./data/gasto.csv", encoding='latin-1')  #voce pode usar o encoding='latin-1' para evitar o erro de codificacao
 df = pd.DataFrame(base)
 
 st.write("# Gastos totais por categoria")

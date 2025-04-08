@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(page_title="Insights", page_icon="💹", layout="wide")
 
 # Carregar os dados
-base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')
+base = pd.read_csv("./data/gasto.csv", encoding='latin-1')
 
 # Converter a coluna 'Data' para o formato datetime
 base['Data'] = pd.to_datetime(base['Data'], format='%Y-%m-%d', errors='coerce')

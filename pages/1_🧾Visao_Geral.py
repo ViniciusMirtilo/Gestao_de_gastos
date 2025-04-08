@@ -5,7 +5,7 @@ import locale
 
 st.set_page_config(page_title="Visao Geral", page_icon="🧾", layout = "wide")
 
-base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')  
+base = pd.read_csv("./data/gasto.csv", encoding='latin-1')  
 df = pd.DataFrame(base)
 
 col1 = st.columns(1) # espaço para 3 colunas
