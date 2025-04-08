@@ -4,11 +4,11 @@ from PIL import Image
 
 st.set_page_config(page_title="Meu Streamlit!", page_icon="📈")
 
-st.markdown("## 📈 Meu primeiro aplicativo Streamlit! 📉")
+st.image("./imagens/logo.png", width=200)
 st.markdown("# Sobre o aplicativo:")
 st.markdown(
         """
-        <p style=''>
+        <p>
             <ul>
                 <li>Upload de arquivo .csv com o extrato bancário.<br></li>
                 <li>Limpeza e tratamento dos dados.<br></li>
