@@ -1,5 +1,7 @@
 # Controle de Gastos Pessoais 💸
 
+[![Open in Streamlit][share_badge]][share_link]
+
 Este repositório contém o código-fonte de um projeto para controle e análise de gastos pessoais, utilizando Python, Pandas e Streamlit.
 
 > **Atenção:** Este projeto foi desenvolvido para fins educacionais e de portfólio. Os dados utilizados são fictícios.
@@ -48,6 +50,8 @@ Este repositório contém o código-fonte de um projeto para controle e análise
 ```sh
 git clone https://github.com/ViniciusMirtilo/Gestao_de_gastos.git
 ```
+
+[share_link]: https://projetogestaodegrafico.streamlit.app/
 
 2. Instale as dependências:
 
