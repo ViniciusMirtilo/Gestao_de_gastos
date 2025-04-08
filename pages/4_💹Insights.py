@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Configuração da página
-st.set_page_config(page_title="Gasto por mês!", page_icon="💵", layout="wide")
+st.set_page_config(page_title="Insights", page_icon="💹", layout="wide")
 
 # Carregar os dados
 base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')

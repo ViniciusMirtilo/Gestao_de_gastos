@@ -3,6 +3,7 @@ import streamlit as st
 import plotly.express as px
 import locale
 
+st.set_page_config(page_title="Visao Geral", page_icon="🧾", layout = "wide")
 
 base = pd.read_csv("c:/Users/Mirtilo/Downloads/py_panda/data/gasto.csv", encoding='latin-1')  #voce pode usar o encoding='latin-1' para evitar o erro de codificacao
 df = pd.DataFrame(base)
