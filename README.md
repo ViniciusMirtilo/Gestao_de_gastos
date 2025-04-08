@@ -70,5 +70,5 @@ Caso tenha dúvidas ou sugestões, sinta-se à vontade para abrir uma *issue* no
 **Repositório no GitHub**: [Projeto de Controle de Gastos pessoais](https://github.com/ViniciusMirtilo/Gestao_de_gastos.git)
 
 [share_badge]: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
-[share_link]: https://share.streamlit.io/okld/streamlit-gallery/main?p=elements
+[share_link]: https://projetogestaodegrafico.streamlit.app/
 
