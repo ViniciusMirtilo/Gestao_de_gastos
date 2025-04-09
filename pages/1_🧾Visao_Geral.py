@@ -45,8 +45,6 @@ df['Mes'] = pd.to_datetime(df['Data'], format='%d/%m/%Y').dt.to_period('M')
 mes_mais_gastos = df.groupby('Mes')['Valor'].sum().idxmax()
 valor_mes_mais_gastos = df.groupby('Mes')['Valor'].sum().max()
 
-locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
-
 #Tive que colocar essa parte do codigo pq o deploy do streamlit estava dando erro na antiga codificação
 # e não estava reconhecendo o locale 'pt_BR.UTF-8'
 meses_traduzidos = {
@@ -63,8 +61,7 @@ mes_mais_gastos_formatado = ' '.join([meses_traduzidos.get(mes_mais_gastos_forma
 categoria_mais_cara = df.groupby('Categoria')['Valor'].sum().idxmax()
 valor_categoria_mais_cara = df.groupby('Categoria')['Valor'].sum().max()
 
-# Centralizar os KPIs usando colunas
-col1, col2, col3 = st.columns([1, 1, 1])  # Três colunas de largura igual
+col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     st.metric(label="Gastos Totais", value=f"R$ {gastos_totais:.2f}")
