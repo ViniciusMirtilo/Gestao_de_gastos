@@ -21,7 +21,7 @@ op = st.selectbox(
 
 st.markdown("<h1 style='text-align: center; padding-bottom:30px;'>Gastos totais por data</h1>", unsafe_allow_html=True)
 gastos_por_data = df[df['Data'] == op]['Valor'].sum()
-st.markdown(f"<h2 style='text-align: center;'>{gastos_por_data:.2f}</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: center;'>R$ {gastos_por_data:.2f}</h2>", unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align: center;'>Gastos totais por categoria</h1>", unsafe_allow_html=True) 
 grafico = df.groupby('Categoria')['Valor'].sum().sort_values(ascending=False)
