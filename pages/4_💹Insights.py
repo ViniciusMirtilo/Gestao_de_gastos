@@ -23,5 +23,3 @@ st.markdown(f"<h2 style='text-align: center;'>{mes_nome}</h2>", unsafe_allow_htm
 # Gasto médio mensal
 st.markdown(f"<h1 style='text-align: center; padding-top: 30px; padding-bottom: 30px;'>Gasto médio mensal</h1>", unsafe_allow_html=True)
 st.markdown(f"<h2 style='text-align: center;'>R$ {base['Valor'].mean():.2f}</h2>", unsafe_allow_html=True)
-
-

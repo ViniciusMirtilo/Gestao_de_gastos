@@ -47,7 +47,18 @@ valor_mes_mais_gastos = df.groupby('Mes')['Valor'].sum().max()
 
 locale.setlocale(locale.LC_TIME, 'pt_BR.UTF-8')
 
-mes_mais_gastos_formatado = mes_mais_gastos.start_time.strftime('%B de %Y')  
+#Tive que colocar essa parte do codigo pq o deploy do streamlit estava dando erro na antiga codificação
+# e não estava reconhecendo o locale 'pt_BR.UTF-8'
+meses_traduzidos = {
+    "January": "Janeiro", "February": "Fevereiro", "March": "Março",
+    "April": "Abril", "May": "Maio", "June": "Junho",
+    "July": "Julho", "August": "Agosto", "September": "Setembro",
+    "October": "Outubro", "November": "Novembro", "December": "Dezembro"
+}
+
+# Formatar o mês manualmente
+mes_mais_gastos_formatado = mes_mais_gastos.start_time.strftime('%B de %Y')
+mes_mais_gastos_formatado = ' '.join([meses_traduzidos.get(mes_mais_gastos_formatado.split()[0], mes_mais_gastos_formatado.split()[0]), mes_mais_gastos_formatado.split()[2]])
 
 categoria_mais_cara = df.groupby('Categoria')['Valor'].sum().idxmax()
 valor_categoria_mais_cara = df.groupby('Categoria')['Valor'].sum().max()
