@@ -6,7 +6,7 @@ st.set_page_config(page_title="Gasto por mês", page_icon="📅", layout='wide')
 
 base = pd.read_csv("./data/gasto.csv", encoding='latin-1')  # voce pode usar o encoding='latin-1' para evitar o erro de codificacao
 
-st.title("Linha do tempo dos gastos")
+st.markdown("<h1 style='text-align: center; padding-bottom:30px;'>Linha do tempo dos gastos</h1>", unsafe_allow_html=True)
 
 base['Data'] = pd.to_datetime(base['Data'], format='%Y-%m-%d')
 
