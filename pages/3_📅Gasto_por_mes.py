@@ -27,7 +27,7 @@ fig = px.line(
 
 st.plotly_chart(fig, use_container_width=True)
 
-st.title("Comparação de gastos por mês")
+st.markdown("<h1 style='text-align: center; padding-bottom:30px;'>Comparação de gastos por mês</h1>", unsafe_allow_html=True)
 
 gastos_por_mes = base[base['Data'].dt.year == op].groupby(base['Data'].dt.month)['Valor'].sum().reset_index()
 
